@@ -72,10 +72,6 @@ body {
     width:100%;
 }
 
-.block1 {
-    width: 100%;
-}
-
 .question {
     display: block;
     font-size: 3vw;
@@ -90,39 +86,28 @@ p {
 }
 
 .information_club {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 43vw;
+    height: 44vw;
 }
 
 .information_text {
-    position: absolute;
+    padding-top: 8vw;
+    background: url(assets/sheese.svg) no-repeat;
+    background-size: 39.9vw;
     width: 46%;
     height: auto;
     color: #2B2626;
-    top: 10vw;
-    left: 0vw;
-}
-
-.square_right {
-    position: absolute;
-    right: 0vw;
-    top: 0vh;
-}
-
-.information_square {
-    height: auto;
-    width: 22vw;
 }
 
 .information_picture {
-    position: absolute;
-    right: 3vw;
-    top: 10vw;
+    width: 46%;
+    margin-top: 8vw;
 }
 
 .information_picture img {
-    width: 40vw;
+    width: 100%;
     height: auto;
     border-radius: 35px;
     box-shadow: 0px 4.00234px 10.0058px 4.00234px rgba(0, 0, 0, 0.35);
@@ -150,77 +135,68 @@ p {
   box-shadow: 0 4px 16px 0 rgba(39, 153, 214, 0.25);
 }
 
-.polygon_picture {
-    width: 45vw;
-}
-
 .mac_top {
-    margin: 7vw 0 2vw 0vw;
-    float: left;
-}
-
-.best_top {
-    width: 40vw;
+    width: 46%;
+    margin-top: 9vw;
 }
 
 .mac_top_block {
-    position: relative;
-}
-
-.mustard_picture {
-    width: 40vw;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 44vw;
 }
 
 .mac_top_text {
-    position: absolute;
-    top: 9vw;
-    right: 3vw;
-    width: 35vw;
+    padding-top: 10.8vw;
+    width: 50%;
+    background: url(assets/mustard.svg) no-repeat;
+    background-size: 40vw;
 }
 
-.mustard {
-    position: relative;
-}
-
-.lines {
-    position: absolute;
-    top: 40vw;
-    right: 0;
+.best_top {
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 0px 4.00234px 10.0058px 4.00234px rgba(0, 0, 0, 0.35);
 }
 
 .meeting {
+    display:flex;
+    justify-content: space-between;
     width: 100%;
-    height: 40vw;
-}
-
-.right_square {
-    float: right;
-    width: 19vw;
-    height: auto;
+    height: 44vw;
 }
 
 .last_meet {
-    position: relative;
+    width: 46%;
+    margin-top: 9vw;
 }
 
 .meet_picture {
-    position: absolute;
-    right: 3vw;
-    top: 5vw;
-    width: 40vw;
-    height: auto;
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 0px 4.00234px 10.0058px 4.00234px rgba(0, 0, 0, 0.35);
 }
 
 .last_meet_text {
-    width: 45%;
-    padding-top: 6vw;
+    order: -1;
+    width: 50%;
+    padding-top: 10.8vw;
+    background: url(assets/boop.svg) no-repeat;
+    background-size: 34vw;
+    background-position: center;
 }
 
 .footer_menu {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     background: #EEEEEE;
     width: 100%;
+}
+
+.footer_navigation {
+    margin-top: 2vw;
+    width: 40%;
 }
 
 .footer_menu_item {
@@ -244,19 +220,18 @@ p {
 }
 
 .footer_picture {
+    margin-left: 1vw;
     width: 3.8vw;
     height: auto;
     cursor: pointer;
 }
 
 .form {
-    position: absolute;
-    top: 3vw;
-    right: 5vw;
-    width: 50%;
     text-align: center;
-    float: right;
-    margin: 0;
+    width: 50%;
+    height: auto;
+    margin-top: 2.4vw;
+    margin-bottom: 2vw;
 }
 
 .form_input {
@@ -274,7 +249,7 @@ p {
 }
 
 .form_input:focus {
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
   transform: scale(1.02, 1.02);
 }
 
@@ -309,8 +284,8 @@ p {
 
 .social {
     display: flex;
-    justify-content: space-between;
-    width: 18%;
+    justify-content: space-around;
+    width: 56%;
     margin-top: 2vw;
     padding-bottom: 2.8vw;
 }
@@ -320,26 +295,167 @@ p {
     cursor: pointer;
 }
 
-.last_line {
-    position: absolute;
-    top: 0;
-    border-radius: 20px;
-    width:100%;
+.footer_menu {
+    border-top: 0.3vw solid #FDD816;
 }
-
-.footer_navigation {
-    padding-top: 2.8vw;
-}
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 900px) {
+    .information_club {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .information_text {
+        width: 100%;
+        height: auto;
+        color: #2B2626;
+        background-size: 22vw;
+        background-position: center top;
+        font-size: 40px;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .information_picture {
+        order: -1;
+        width: 100%;
+        height: 40vw;
+        background: url(assets/information_picture_min.png) 100% 100% no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 3vw;
+    }
+
+    .information_picture img {
+        display: none;
+    }
+
+    .question {
+        font-size: 24px;
+    }
+
+    .mac_top {
+        width: 100%;
+        height: 40vw;
+        background: url(assets/best_mac_min.png) 100% 100% no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 3vw;
+    }
+
+    .mac_top_block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .mac_top_text {
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+        width: 100%;
+        background-size: 20vw;
+        background-position: center top;
+    }
+
+    .best_top {
+        display: none;
+    }
+
+    .meeting {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .last_meet {
+        width: 100%;
+        height: 40vw;
+        background: url(assets/meeting_min.png) 100% 100% no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 3vw;
+    }
+
+    .meet_picture {
+        display: none;
+    }
+
+    .last_meet_text {
+        order: 1;
+        width: 100%;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+        background-size: 20vw;
+        background-position: center 30%;
+    }
+    .footer_menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer_navigation {
+        width: 100%;
+        height: auto;
+    }
+
+    .form {
+        width: 92%;
+        height: auto;
+        margin: auto;
+        border-top: 0.1vw solid #FDD816;
+        padding-top: 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .footer_menu_item {
+        display: flex;
+        justify-content: row;
+        margin: 0.8vw 0;
+    }
+    .social img {
+        width: 5.5vw;
+    }
+   .social {
+        width: 40%;
+        margin-top: 2.5vw;
+        margin-bottom: 0;
+    }
+    .footer_picture {
+        margin-left: 2vw;
+        width: 5.5vw;
+        height: auto;
+        cursor: pointer;
+    }
+    .form_input {
+      width: 70%;
+      margin-bottom: 1vw;
+      padding: 2vw 2vw;
+      border-radius: 8px;
+    }
+    .footer_button {
+      padding: 6px 12px;
+      margin-top: 2vw;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .footer_button:hover {
+      background: #7cc1e6;
+      box-shadow: 0 4px 16px 0 rgba(39, 153, 214, 0.25);
+    }
+
+
+
+
     .item_menu {
         width: 45%;
         margin: 3vw 0 0.5vw 0;
@@ -358,11 +474,6 @@ p {
      .button1 {
         font-size: 2.8vw;
      }
-     .footer_button {
-        font-size: 2.4vw;
-        padding: 8px 14px;
-        margin-top: 2vw;
-     }
      .logo_picture {
         width:22vw;
      }
@@ -372,6 +483,24 @@ p {
      .button1 {
         padding: 10px 18px;
      }
+     .information_picture img {
+        border-radius: 10px;
+     }
+     p {
+        font-size: 18px;
+        margin: 0.8vw 0;
+     }
+     .form_input {
+          width: 90%;
+          font-size: 10px;
+          font-weight: 300;
+     }
+     .footer_text {
+        font-size: 14px;
+     }
+     .email {
+        font-size: 14px;
+     }
 }
 
 
@@ -379,6 +508,26 @@ p {
 
 @media screen and (max-width: 650px) {
     p {
-        font-size: 2.8vw;
-    }
+        font-size: 12px;
+        margin: 0.8vw 0;
+     }
+}
+
+@media screen and (max-width: 530px) {
+    p {
+        font-size: 3.5vw;
+        margin: 0.8vw 0;
+     }
+     .question {
+        font-size: 3.8vw;
+     }
+     .form_input {
+          font-size: 10px;
+     }
+     .footer_text {
+        font-size: 3.2vw;
+     }
+     .email {
+        font-size: 3.2vw;
+     }
 }
