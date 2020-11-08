@@ -3,46 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>McDonald's club</title>
+  <title>McDonalds.club</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" media="all" href="animate.css">
   <script src="js/wow.min.js"></script>
+    <script src="js/cleave.js"></script>
+    <script src="js/myscript.js"></script>
   <script>new WOW().init();</script>
 </head>
 <body>
-  <div class="mainradius">
-    <div class="logo">
-      <a href="https://mcdonalds.ru/" target="_blank"><img class="logo_picture" src="assets/logo.svg"></a>
+    <div class="header">
+      <div class="logo">
+        <a href="https://mcdonalds.ru/" target="_blank"><img class="logo__picture" src="assets/logo.svg"></a>
+      </div>
+      <div class="menu">
+          <div class="menu__item">
+            <a href="#"><img class="menu__picture" src="assets/menu 1.png"></a>
+            <a href="#"><div class="menu__text">Новинки</div></a>
+          </div>
+          <div class="menu__item">
+            <a href="#"><img class="menu__picture" src="assets/menu 2.png"></a>
+            <a href="#"><div class="menu__text">Общий чат</div></a>
+          </div>
+          <div class="menu__item">
+            <a href="#"><img class="menu__picture" src="assets/menu 7.png"></a>
+            <a href="#"><div class="menu__text">Промокоды</div></a>
+          </div>
+          <div class="menu__item">
+            <a href="#"><img class="menu__picture" src="assets/menu 4.png"></a>
+            <a href="#"><div class="menu__text">Вступить в команду</div></a>
+          </div>
+          <div class="menu__item">
+            <a href="#"><img class="menu__picture" src="assets/menu 5.png"></a>
+            <a href="#"><div class="menu__text">Акции</div></a>
+          </div>
+          <div class="menu__item">
+            <a href="#"><img class="menu__picture" src="assets/menu 6.png"></a>
+            <a href="#"><div class="menu__text">Ваша реклама</div></a>
+          </div>
+      </div>
     </div>
-    <div class="menu">
-      <div class="item_menu">
-        <a href="#"><img class="menu_picture" src="assets/menu 1.png"></a>
-        <a href="#"><div class="menu_text">Новинки</div></a>
-      </div>
-      <div class="item_menu">
-        <a href="#"><img class="menu_picture" src="assets/menu 2.png"></a>
-        <a href="#"><div class="menu_text">Общий чат</div></a>
-      </div>
-      <div class="item_menu">
-        <a href="#"><img class="menu_picture" src="assets/menu 7.png"></a>
-        <a href="#"><div class="menu_text">Промокоды</div></a>
-      </div>
-      <div class="item_menu">
-        <a href="#"><img class="menu_picture" src="assets/menu 4.png"></a>
-        <a href="#"><div class="menu_text">Вступить в команду</div></a>
-      </div>
-      <div class="item_menu">
-        <a href="#"><img class="menu_picture" src="assets/menu 5.png"></a>
-        <a href="#"><div class="menu_text">Акции</div></a>
-      </div>
-      <div class="item_menu">
-        <a href="#"><img class="menu_picture" src="assets/menu 6.png"></a>
-        <a href="#"><div class="menu_text">Ваша реклама</div></a>
-      </div>
-    </div>
-    <div id="anchor1" class="information_club">
-      <div class="information_text">
+    <div id="anchor1" class="information">
+      <div class="information__text">
         <p class="question">Кто мы?</p>
         <p>Мы офицальный клуб поклоников
           сети ресторанов быстрого питания
@@ -51,7 +55,7 @@
           объединиться!</p>
           <div class="buttons">
               <button class="blob-btn button-mini">
-                  <p>Вступить в клуб</p>
+                <p>Вступить в клуб</p>
                 <span class="blob-btn__inner">
                     <span class="blob-btn__blobs">
                     <span class="blob-btn__blob"></span>
@@ -63,22 +67,23 @@
               </button>
           </div>
       </div>
-      <div class="information_picture">
+      <div class="information__picture">
         <img class="fadeInRightBig wow" src="assets/information_picture.png" data-wow-duration="0.8s">
       </div>
     </div>
-    <div class="mac_top_block">
-      <div class="mac_top">
+    <div class="rating">
+      <div class="rating__picture">
         <img class="best_top fadeInLeftBig wow" src="assets/best mac 1.png" data-wow-duration="0.8s">
       </div>
-      <div class="mac_top_text">
+      <div class="rating__text">
         <p class="question">Топ ресторанов Макдоналдс:</p>
         <p>В 2019 году по итогам голосования победителем стал
           ресторан Макдоналдс из
           Иркутска.
         </p>
         <div class="buttons">
-              <button class="blob-btn button-mini"><p>Посмотреть весь топ</p>
+              <button class="blob-btn button-mini">
+                <p>Посмотреть весь топ</p>
                 <span class="blob-btn__inner">
                   <span class="blob-btn__blobs">
                     <span class="blob-btn__blob_right"></span>
@@ -92,10 +97,10 @@
       </div>
     </div>
     <div class="meeting">
-      <div id="anchor2" class="last_meet">
-        <img class="meet_picture fadeInRightBig wow" src="assets/meeting.png" data-wow-duration="0.8s">
+      <div id="anchor2" class="meeting__picture">
+        <img class="fadeInRightBig wow" src="assets/meeting.png" data-wow-duration="0.8s">
       </div>
-      <div class="last_meet_text">
+      <div class="meeting__text">
         <p class="question">Мероприятия</p>
         <p>Каждый месяц наш клуб проводит
           массовые мероприятия, на которых
@@ -103,7 +108,7 @@
         </p>
         <div class="buttons">
               <button class="blob-btn button-mini">
-                  <p>Узнать больше</p>
+                <p>Узнать больше</p>
                 <span class="blob-btn__inner">
                   <span class="blob-btn__blobs">
                     <span class="blob-btn__blob"></span>
@@ -116,27 +121,27 @@
           </div>
       </div>
     </div>
-    <div class="photos_block">
-      <div class="photos_text">
+    <div class="review">
+        <div class="review__text">
           <p class="question"></p>
-          <p class="text_text">Наши подписчики по всему миру
+          <p>Наши подписчики по всему миру
            каждый день делают фотоотчёты
            с рызных ресторанов Макдоналдс,
            чтобы вы знали, где вкуснее всего!</p>
-      </div>
-        <div id="one" class="photos">
-          <div class="boop1">
+        </div>
+        <div id="rating" class="review__row">
+          <div class="review__item1">
             <div class="al-c1">
              <div class="container">
               <ul class="effects">
                <li>
-                <img src="assets/lil peep.png" alt="">
+                <img src="assets/review1.png" alt="">
                  <div>
                  <div class="al-b">
                   <div class="container">
                     <p>Германия, Мюнхен</p>
                     <p>John Isner</p>
-                    <a class="red" href="#zatemnenie">Читать</a>
+                    <a class="review__link red" href="#pop-up">Читать</a>
                   </div>
                 </div>
                 </div>
@@ -145,18 +150,18 @@
              </div>
             </div>
           </div>
-          <div class="boop2">
+          <div class="review__item2">
             <div class="al-c2">
              <div class="container">
               <ul class="effects">
                <li>
-                <img src="assets/lil peep.png" alt="">
+                <img src="assets/review2.png" alt="">
                  <div>
                  <div class="al-b">
                   <div class="container">
                     <p>Новозеландия, Окленд</p>
-                    <p>Jack Russak</p>
-                    <a class="yellow" href="#zatemnenie2">Читать</a>
+                    <p>Joan Alibas</p>
+                    <a class="review__link yellow" href="#pop-up2">Читать</a>
                   </div>
                 </div>
                 </div>
@@ -165,18 +170,18 @@
              </div>
             </div>
           </div>
-          <div class="boop3">
+          <div class="review__item3">
             <div class="al-c3">
              <div class="container">
               <ul class="effects">
                <li>
-                <img src="assets/lil peep.png" alt="">
+                <img src="assets/review3.png" alt="">
                  <div>
                  <div class="al-b">
                   <div class="container">
                     <p>Саратов</p>
                     <p>Саня</p>
-                    <a class="red" href="#zatemnenie">Читать</a>
+                    <a class="review__link red" href="#pop-up3">Читать</a>
                   </div>
                 </div>
                 </div>
@@ -186,21 +191,21 @@
             </div>
           </div>
         </div>
-        <div id="zatemnenie">
-          <a class="outside_link" href="#one"></a>
-          <div id="okno" class="zoomIn animated">
-              <div class="photo_okno1">
-                  <img src="assets/lil peep.png">
+        <div id="pop-up">
+          <a class="outsideLink" href="#rating"></a>
+          <div id="window" class="zoomIn animated">
+              <div class="window__picture1">
+                  <img src="assets/review1.png">
               </div>
-              <div class="text_okno1">
+              <div class="window__text1">
                   <p class="question">Я крутой, а ты нет!</p>
-                  <p>сегодня Позиционируем родительский
-                      и растягиваем его на всю ширину и высоту окна.
-                      Задаём ему display: none; и перенаправляем ссылку вызова окна на него</p>
-                  <a class="mega-boop" href="#one">
+                  <p>Cегодня я пошёл в мак, потому что я крутой. Сначала я хотел
+                  рассказать о своих эмоциях, но думаю, что будет лучше,
+                  если я расскажу, какой я КрУтОй. Короче говоря, я крутой.</p>
+                  <a class="mega-boop" href="#rating">
                   <svg class="liquid-button"
                      data-text="Держи в курсе"
-                       data-text-color="#333333"
+                     data-text-color="#333333"
                      data-force-factor="0.1"
                      data-layer-1-viscosity="0.5"
                      data-layer-2-viscosity="0.4"
@@ -213,25 +218,25 @@
                      data-color3="#FAE059">
                   </svg>
                   </a>
-                  <a class="liquid-mini" href="#one">
+                  <a class="liquid-mini" href="#rating">
                       <p>Держи в курсе</p>
                   </a>
               </div>
-             <a href="#one" class="cross">&#10006;</a>
+             <a href="#rating" class="window__cross">&#10006;</a>
           </div>
       </div>
-      <div id="zatemnenie2">
-          <a class="outside_link" href="#one"></a>
-          <div id="okno2" class="zoomIn animated">
-              <div class="photo_okno2">
-                  <img src="assets/meeting_min.png">
+      <div id="pop-up2">
+          <a class="outsideLink" href="#rating"></a>
+          <div id="window2" class="zoomIn animated">
+              <div class="window__picture2">
+                  <img src="assets/review2vert.png">
               </div>
-              <div class="text_okno2">
-                  <p class="question">Я крутой, а ты нет!</p>
-                  <p>сегодня Позиционируем родительский
-                      и растягиваем его на всю ширину и высоту окна.
-                      Задаём ему display: none; и перенаправляем ссылку вызова окна на него</p>
-                  <a class="mega-boop" href="#one">
+              <div class="window__text2">
+                  <p class="question">Всё очень вкусно!</p>
+                  <p>Меня зовут Alibas и я хочу вам рассказать о своих ощущениях
+                  от похода в Макдоналдс. Мне всё Очень понравилось! Цены дешевые,
+                  еда вкусная! Короче говоря, всем рекомендую Бургер Кинг!</p>
+                  <a class="mega-boop" href="#rating">
                       <svg class="liquid-button"
                          data-text="Держи в курсе"
                            data-text-color="#333333"
@@ -247,39 +252,73 @@
                          data-color3="#FAE059">
                       </svg>
                   </a>
-                  <a class="liquid-mini" href="#one">
+                  <a class="liquid-mini" href="#rating">
                       <p>Держи в курсе</p>
                   </a>
               </div>
-              <a href="#one" class="cross">&#10006;</a>
+              <a href="#rating" class="window__cross">&#10006;</a>
           </div>
       </div>
-        <div class="photo_button">
-            <div>
-                <button class="btn">Добавить отчёт</button>
-            </div>
-            <div>
-                <button class="btn1">Посмотреть больше</button>
-            </div>
-        </div>
+      <div id="pop-up3">
+          <a class="outsideLink" href="#rating"></a>
+          <div id="window3" class="zoomIn animated">
+              <div class="window__picture1">
+                  <img src="assets/review3.png">
+              </div>
+              <div class="window__text1 verticalBackground">
+                  <p class="question">Они говорили, меня не существует!</p>
+                  <p>Uuuuuhhh uuuuuhhhhh uuuuhh uh uuhh!
+                  uuuhhh uhuhhh uhhuhuhh uuuhuuuh, uhhuuuhhh uuuhh,
+                  uuuhh uuuuuhhh uh uuuuuhhh UUUHHH!!</p>
+                  <a class="mega-boop" href="#rating">
+                  <svg class="liquid-button"
+                     data-text="Держи в курсе"
+                     data-text-color="#333333"
+                     data-force-factor="0.1"
+                     data-layer-1-viscosity="0.5"
+                     data-layer-2-viscosity="0.4"
+                     data-layer-1-mouse-force="400"
+                     data-layer-2-mouse-force="500"
+                     data-layer-1-force-limit="1"
+                     data-layer-2-force-limit="2"
+                     data-color1="#4FC377"
+                     data-color2="#FDD816"
+                     data-color3="#FAE059">
+                  </svg>
+                  </a>
+                  <a class="liquid-mini" href="#rating">
+                      <p>Держи в курсе</p>
+                  </a>
+              </div>
+             <a href="#rating" class="window__cross">&#10006;</a>
+          </div>
+      </div>
+      <div class="review__button">
+          <div>
+              <button class="btn">Добавить отчёт</button>
+          </div>
+          <div>
+              <button class="btn1">Посмотреть больше</button>
+          </div>
+      </div>
     </div>
-    <div class="footer_menu">
-      <div class="footer_navigation">
-        <div class="footer_menu_item">
-          <a href="#anchor1"><img class="footer_picture" src="assets/lower 1.png"></a>
-          <div class="footer_text"><a class="footer_link" href="#anchor1">Работа в клубе</a></div>
+    <div class="footer">
+      <div class="navigation">
+        <div class="navigation__item">
+          <a href="#anchor1"><img class="navigation__picture" src="assets/lower 1.png"></a>
+          <div class="navigation__text"><a class="navigation__link" href="#anchor1">Работа в клубе</a></div>
         </div>
-        <div class="footer_menu_item">
-          <a href="#"><img class="footer_picture" src="assets/lower 2.png"></a>
-          <div class="footer_text"><a class="footer_link" href="#">Обратная связь</a></div>
+        <div class="navigation__item">
+          <a href="#"><img class="navigation__picture" src="assets/lower 2.png"></a>
+          <div class="navigation__text"><a class="navigation__link" href="#">Обратная связь</a></div>
         </div>
-        <div class="footer_menu_item">
-          <a href="#anchor2"><img class="footer_picture" src="assets/lower 3.png"></a>
-          <div class="footer_text"><a class="footer_link" href="#anchor2">Мероприятия</a></div>
+        <div class="navigation__item">
+          <a href="#anchor2"><img class="navigation__picture" src="assets/lower 3.png"></a>
+          <div class="navigation__text"><a class="navigation__link" href="#anchor2">Мероприятия</a></div>
         </div>
-        <div class="footer_menu_item">
-          <a href="#"><img class="footer_picture" src="assets/lower 4.png"></a>
-          <div class="footer_text"><a class="footer_link" href="#">Благотворительность</a></div>
+        <div class="navigation__item">
+          <a href="#"><img class="navigation__picture" src="assets/lower 4.png"></a>
+          <div class="navigation__text"><a class="navigation__link" href="#">Благотворительность</a></div>
         </div>
         <div class="social">
           <img src="assets/vk.svg">
@@ -288,18 +327,18 @@
         </div>
       </div>
       <form class="form">
-        <p class="email">Подпишись на рассылку новостей:</p>
-        <input type="email" class="form_input" placeholder="E-mail">
-        <p class="email">Номер банковской карты:</p>
-        <input type="text" class="form_input" minlength="12" maxlength="19" placeholder="1111-1111-1111-1111">
-        <p class="email">Пароль от карты(это правда необходимо):</p>
-        <input type="password" class="form_input" maxlength="4" placeholder="1234">
+        <p class="form__text">Подпишись на рассылку новостей:</p>
+        <input type="email" class="form__input" placeholder="E-mail">
+        <p class="form__text">Номер банковской карты:</p>
+        <input id="intTextBox" type="text" class="form__input creditcard" maxlength="19" placeholder="1111-1111-1111-1111" />
+        <p class="form__text">Пароль от карты(это правда необходимо):</p>
+        <input type="password" class="form__input" maxlength="4" placeholder="1234">
         <div class="button2">
-          <button class="footer_button">Отправить</button>
+          <button class="footer__button">Отправить</button>
         </div>
       </form>
     </div>
-  </div>
- <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/cleave.js"></script>
 </body>
 </html>
