@@ -15,7 +15,7 @@ var LiquidButton = function () {
     this.tension = options.tension * 1 || 0.4;
     this.width = options.width * 1 || 200;
     this.height = options.height * 1 || 50;
-    this.margin = options.margin || 40;
+    this.margin = options.margin || 15;
     this.hoverFactor = options.hoverFactor || -0.1;
     this.gap = options.gap || 5;
     this.debug = options.debug || false;
@@ -296,3 +296,7 @@ for (var buttonIndex = 0; buttonIndex < buttons.length; buttonIndex++) {
   var _button = buttons[buttonIndex];
   _button.liquidButton = new LiquidButton(_button);
 }
+
+new Cleave('.creditcard', {
+    creditCard: true
+});
